@@ -18,7 +18,7 @@ namespace ApiClient
 
 
 
-            Console.WriteLine($"Hello, this is not a TODO List, but if you want to see a random dog breed: ");
+            Console.WriteLine($"Hello, this is not a TODO List, but if you want to see a random dog picture: ");
             Console.WriteLine($"{items.message} this has been a {items.status}! ");
 
 
