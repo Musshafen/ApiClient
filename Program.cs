@@ -18,8 +18,8 @@ namespace ApiClient
 
 
 
-
-            Console.WriteLine($" {items.status} {items.message}! ");
+            Console.WriteLine($"Hello, this is not a TODO List, but if you want to see a random dog breed: ");
+            Console.WriteLine($"{items.message} this has been a {items.status}! ");
 
 
         }
