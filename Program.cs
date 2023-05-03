@@ -12,14 +12,16 @@ namespace ApiClient
         {
             var client = new HttpClient();
 
-            var responseBodyAsStream = await client.GetStreamAsync("https://api.openbrewerydb.org/v1/breweries");
+            var responseBodyAsStream = await client.GetStreamAsync("https://dog.ceo/api/breeds/image/random");
 
-            var items = await JsonSerializer.DeserializeAsync<List<Item>>(responseBodyAsStream);
+            var items = await JsonSerializer.DeserializeAsync<Item>(responseBodyAsStream);
 
-           // foreach(var item in items)
-           // {
-           //     Console.WriteLine($"The task {item.text} was created on {item.created_at} and has a completion of {item.complete}");
-          //  }
+
+
+
+            Console.WriteLine($" {items.status} {items.message}! ");
+
+
         }
     }
 }
